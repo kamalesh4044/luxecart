@@ -10,11 +10,12 @@
   --accent: #0070f3;
 }
 
-@layer base {
-  body {
-    @apply bg-[var(--background)] text-[var(--foreground)] antialiased;
-    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
-  }
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
 }
 
 /* Custom Glassmorphism Utility */
@@ -33,5 +34,6 @@ html {
 
 /* Selection Color */
 ::selection {
-  @apply bg-black text-white;
+  background-color: #000000;
+  color: #ffffff;
 }
